@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ECBBFB80-B5AC-45E4-8D27-15501A68EA09}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FuelWarehouseStockTracking</RootNamespace>
+    <AssemblyName>FuelWarehouseStockTracking</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmFuelSell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFuelSell.Designer.cs">
+      <DependentUpon>FrmFuelSell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmlAuthority3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmlAuthority3.Designer.cs">
+      <DependentUpon>FrmlAuthority3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMovements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMovements.Designer.cs">
+      <DependentUpon>FrmMovements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonnelTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonnelTransactions.Designer.cs">
+      <DependentUpon>FrmPersonnelTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWarehouseOperations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWarehouseOperations.Designer.cs">
+      <DependentUpon>FrmWarehouseOperations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChangePassword.Designer.cs">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmlAuthority1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmlAuthority1.Designer.cs">
+      <DependentUpon>FrmlAuthority1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmlAuthority2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmlAuthority2.Designer.cs">
+      <DependentUpon>FrmlAuthority2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductSell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductSell.Designer.cs">
+      <DependentUpon>FrmProductSell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTill.Designer.cs">
+      <DependentUpon>FrmTill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmFuelSell.resx">
+      <DependentUpon>FrmFuelSell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmlAuthority3.resx">
+      <DependentUpon>FrmlAuthority3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMovements.resx">
+      <DependentUpon>FrmMovements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonnelTransactions.resx">
+      <DependentUpon>FrmPersonnelTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChangePassword.resx">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmlAuthority1.resx">
+      <DependentUpon>FrmlAuthority1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmlAuthority2.resx">
+      <DependentUpon>FrmlAuthority2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductSell.resx">
+      <DependentUpon>FrmProductSell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTill.resx">
+      <DependentUpon>FrmTill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWarehouseOperations.resx">
+      <DependentUpon>FrmWarehouseOperations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
